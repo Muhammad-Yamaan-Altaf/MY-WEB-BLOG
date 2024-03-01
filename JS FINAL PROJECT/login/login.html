@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="max-w-md w-full bg-white shadow-lg rounded-lg p-8" id="login_form">
+        <!-- Logo at the top center -->
+        <div class="flex justify-center mb-8">
+            <img src="../logo.png" alt="Logo" class="h-10">
+        </div>
+        <!-- Email and Password fields -->
+        <form>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input id="email" type="email" placeholder="Enter your email"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                <input id="password" type="password" placeholder="Enter your password"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <!-- Login Button -->
+            <div class="mb-6">
+                <button type="submit"  id="signInBtn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" >Login</button>
+            </div>
+            <!-- Login with Google -->
+            <div class="mb-6">
+                <button type="button" id="loginWithGoogleBtn" 
+                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Login
+                    with Google</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <p> You have'nt registered ? </p>
+                <span><a href="./signUp.html" target="_blank"> <u> Register here </u></a></span>
+            </div>
+        </form>
+    </div>
+<!--! Login Form End -->
+    
+    <script type="module" src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <div class="navbar bg-base-100 flex items-center justify-between">
+    <div>
+      <a class="btn btn-ghost text-xl">
+        <img src="../logo.png" alt="logo" class="h-10">
+      </a>
+    </div>
+    <div class="flex items-center justify-center flex-1"> 
+      <div class="form-control">
+        <input type="text" placeholder="Search Blog OR Query &#128269" class="input input-bordered w-24 md:w-auto btn-outline" />
+
+      </div>
+    </div>
+    <button class="btn mr-12 btn-outline" id="writeOrAskBtn">Write or ask</button>
+
+    <div class="flex gap-2">
+      <button class="btn mr-2 btn-outline" id="logInBtn">LogIn</button>
+    </div>
+  </div>
+
+  <!-- Navbar End -->
+  <div id="blogPosts">
+    <!-- Blog posts will be displayed here -->
+</div>
+<script type="module" src="./index.js"></script>
+</body>
+
+</html>

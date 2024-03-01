@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+      <!-- Navbar Start -->
+  <div class="navbar bg-base-100 flex items-center justify-between">
+    <div>
+      <a class="btn btn-ghost text-xl">
+        <img src="../logo.png" alt="logo" class="h-10">
+      </a>
+    </div>
+    <div class="flex items-center justify-center flex-1"> 
+    </div>
+    <button class="btn mr-12 btn-outline" id="writeOrAskBtn">Write or ask</button>
+
+    <div class="flex gap-2">
+        <button class="btn mr-2 btn-outline" id="logOutBtn">LogOut</button>
+      </div>
+  </div>
+
+  <!-- Navbar End -->
+  <div class="blogData">
+    <p class="mt-16 text-xl"><b>Create Blog or Ask Questions </b></p>
+    <hr>
+    <div class="flex flex-col w-full lg:flex-row ">
+        <br>
+        <div class="grid flex-grow h-60 w-50 card bg-base-300 rounded-box place-items-center">
+            <label for="tname" class="text-lg"><b>Title</b></label>
+            <input type="text" id="title" placeholder="Enter title" class="input input-bordered " />
+            <div class="divider-vertical mb-8">
+                <p> <b>Select Type </b></p>
+                <input type="radio" name="radio-1" class="radio" checked />Blog
+                <input type="radio" name="radio-1" class="radio" />Question
+            </div>
+        </div>
+        <div class="divider lg:divider-horizontal w-1/24"></div> <!-- Adjust width for divider -->
+        <div class="grid flex-grow h-60 w-50 card bg-base-300 rounded-box place-items-center">
+            <select class="select select-bordered w-full max-w-xs">
+                <option disabled selected>Select Category</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>ReactJS</option>
+            </select>
+            <div class="divider-vertical mb-8">
+                <p> <b>Select Status </b></p>
+                <input type="radio" name="radio-1" class="radio" checked />Active
+                <input type="radio" name="radio-1" class="radio" />In-Active
+            </div>
+        </div>
+    </div>
+    <div class="divider lg:divider-vertical w-1/48"></div> 
+    <div class="flex flex-col w-full lg:flex-row">
+        <br>
+        <div class="grid flex-grow h-60 w-50 card bg-base-300 rounded-box place-items-center">
+            <input type="file" id="file_input" class="file-input file-input-bordered w-full max-w-xs " />
+        </div>
+        <div class="divider lg:divider-horizontal w-1/24"></div> 
+        <div class="grid flex-grow h-60 w-50 card bg-base-300 rounded-box place-items-center ">
+            <label class="pt-2 mt-2"> <b>Description </b></label>
+            <textarea class="textarea textarea-primary textarea-bordered textarea-lg w-full max-w-xs mt-6" id="content" placeholder="Enter Description"></textarea>
+            <div class="flex mt-6">
+                <button class="btn btn-xs btn-success btn-md mr-6 mt-4" id="cancelBtn">Cancel</button>
+                <button class="btn btn-xs btn-success btn-md ml-6 mt-4" id="submitBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+    <script type="module" src="./createblog.js" ></script>
+    </script>
+</body>
+
+</html>

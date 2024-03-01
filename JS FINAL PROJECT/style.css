@@ -1,0 +1,131 @@
+/* Customize the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a202c; /* Dark background color */
+  color: #cbd5e0; /* Light text color */
+}
+
+/* Style the form container */
+.max-w-md {
+  background-color: #2d3748; /* Darker container background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 28rem;
+}
+
+/* Center the logo */
+.flex.justify-center img {
+  height: 4rem;
+}
+
+/* Style the form inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #4a5568; /* Darker border color */
+  border-radius: 0.25rem;
+  background-color: #2d3748; /* Darker input background */
+  color: #cbd5e0; /* Light text color */
+  transition: border-color 0.3s ease;
+}
+
+/* Add focus style to inputs */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #63b3ed; /* Lighter border color on focus */
+}
+
+/* Style the submit button */
+button[type="submit"],
+button[type="button"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the primary button */
+button[type="submit"] {
+  background-color: #4c51bf; /* Darker primary button color */
+  color: #fff;
+}
+
+/* Hover effect for primary button */
+button[type="submit"]:hover {
+  background-color: #6a75ca; /* Lighter primary button color on hover */
+}
+
+/* Style the secondary button */
+button[type="button"] {
+  background-color: #e53e3e; /* Darker secondary button color */
+  color: #fff;
+}
+
+/* Hover effect for secondary button */
+button[type="button"]:hover {
+  background-color: #f56565; /* Lighter secondary button color on hover */
+}
+body {
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #3b82f6;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2563eb;
+        }
